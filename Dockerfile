@@ -1,8 +1,8 @@
 # Description: A lightweight Shopify CLI container intended for CI, based on ruby:3-alpine
 # Usage: docker build -t <tag> [--build-arg version=<version>]
-ARG version=2.32.0
 
 FROM ruby:3-alpine
+ARG version=2.32.0
 
 RUN test -n "$version"
 # Install deps for native gem installation, sudo and bash for the Shopify gem
